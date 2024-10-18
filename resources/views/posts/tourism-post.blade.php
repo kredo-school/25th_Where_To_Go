@@ -42,55 +42,57 @@
 
 
             <!-- Image -->
-            <div class="card col mt-3" style="height: auto;">
-                <!-- メイン画像表示 -->
-                <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="max-height: 500px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{ asset('images/firework.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 1">
+            <div class="spot-container">
+                <div class="card col mt-3" style="height: auto;">
+                    <!-- メイン画像表示 -->
+                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="max-height: 500px;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('images/firework.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('images/firework2.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('images/firework3.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('images/beach.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Beach Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('images/firework5.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Another Image">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/firework2.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/firework3.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Firework Image 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/beach.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Beach Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('images/firework5.jpeg') }}" class="d-block w-100 main-carousel-img" alt="Another Image">
-                        </div>
+
+                        <!-- カルーセルのコントロール（前後に移動） -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
 
-                    <!-- カルーセルのコントロール（前後に移動） -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <!-- サブ画像 (サムネイル) -->
-                <div class="carousel-indicators-wrapper mt-3 d-flex justify-content-center gap-2 flex-wrap">
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                        <img src="{{ asset('images/firework.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 1">
-                    </button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2">
-                        <img src="{{ asset('images/firework2.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 2">
-                    </button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3">
-                        <img src="{{ asset('images/firework3.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 3">
-                    </button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4">
-                        <img src="{{ asset('images/beach.jpeg') }}" class="thumbnail-img" alt="Beach Thumbnail">
-                    </button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Slide 5">
-                        <img src="{{ asset('images/firework5.jpeg') }}" class="thumbnail-img" alt="Another Thumbnail">
-                    </button>
+                    <!-- サブ画像 (サムネイル) -->
+                    <div class="carousel-indicators-wrapper mt-3 d-flex justify-content-center gap-2 flex-wrap">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                            <img src="{{ asset('images/firework.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 1">
+                        </button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src="{{ asset('images/firework2.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 2">
+                        </button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                            <img src="{{ asset('images/firework3.jpeg') }}" class="thumbnail-img" alt="Firework Thumbnail 3">
+                        </button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4">
+                            <img src="{{ asset('images/beach.jpeg') }}" class="thumbnail-img" alt="Beach Thumbnail">
+                        </button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Slide 5">
+                            <img src="{{ asset('images/firework5.jpeg') }}" class="thumbnail-img" alt="Another Thumbnail">
+                        </button>
+                    </div>
                 </div>
             </div>
   
@@ -191,7 +193,7 @@
                             <h5 class="fw-bold">Fee</h5>
                             <p>Free</p>
                             <br>
-                            <h5>Useful Information About This Spot</h5>
+                            <h5 class="fw-bold">Useful Information About This Spot</h5>
                             <p> &middot; &nbsp; It's better to go earier</p>
                             <p> &middot; &nbsp; It's better to go earier</p>
                             <p> &middot; &nbsp; It's better to go earier</p>

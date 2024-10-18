@@ -1,9 +1,6 @@
-
 <link rel="stylesheet" href="{{asset('css/posts.css')}}">
 
 @extends('layouts.app')
-
-
 
 @section('content')
 
@@ -172,7 +169,7 @@
                      <div class="card3 border-0  bg-white" style="height: 20rem;">
                         <div class="card-body">
                             <a href="#" class="">
-                                    <i class="fa-solid fa-location-dot"></i> Spot name
+                                    <h2><i class="fa-solid fa-location-dot"></i> Spot name</h2>
                             </a>                
                             <iframe 
                                 src="https://www.google.com/maps?q= &output=embed"

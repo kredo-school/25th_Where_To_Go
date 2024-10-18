@@ -2,16 +2,14 @@
 
 
 <div class="modal fade" id="delete-post">
-   <div class="modal-dialog">
+   <div class="modal-dialog w-50">
         <div class="modal-content ">
             <div class="modal-header justify-content-center">
-                <h3 class="h5 modal-title ">
-                    Delete Post
-                </h3>
+            <h5 class="modal-title mx-auto text-light" id="categoryModalLabel">Delete Posts</h5>
             </div>
 
             <div class="modal-body text-center">
-                <div class="mt-3">
+                <div class="mt-1">
                     <img src="" alt="Post ID " class="image-lg">
                     <p class="mt-1 text-muted"></p>
                 </div>
