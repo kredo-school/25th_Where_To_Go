@@ -38,11 +38,6 @@ p {
   flex-direction: column;
 }
 
-/* images */
-.logo-img img{
-  
-}
-
 .eventbar {
   position: relative;
   max-width: 1200px; /* 最大幅の制限 */
