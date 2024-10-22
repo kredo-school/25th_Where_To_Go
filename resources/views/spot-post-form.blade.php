@@ -3,7 +3,7 @@
 @extends('layouts.app')
 
 @section('title', 'Select-post-form')
-
+z
 @section('content')
 <div class="background"></div> <!-- 背景画像 -->
 <div class="full-height">
