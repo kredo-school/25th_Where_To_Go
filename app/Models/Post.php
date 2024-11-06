@@ -68,6 +68,11 @@ class Post extends Model
     {
         return $this->favorites()->where('user_id', auth()->user()->id)->exists();
     }
+
+    public function replies()
+    {
+        return $this->hasMany(Comment::class, 'parent_id'); // parent_idでリプライを取得
+    }
     
 
 // 日付としてキャストする属性
