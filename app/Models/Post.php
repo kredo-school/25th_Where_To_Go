@@ -67,7 +67,6 @@ class Post extends Model
     }
 
     
-    // A post belongs to a spot
     public function spot()
     {
         return $this->belongsTo(Spot::class, 'spots_id', 'id');
@@ -186,11 +185,11 @@ class Post extends Model
     
 
 // 日付としてキャストする属性
-protected $casts = [
-    'start_date' => 'datetime',
-    'end_date' => 'datetime',
-];
-}
+// protected $casts = [
+//     'start_date' => 'datetime',
+//     'end_date' => 'datetime',
+// ];
+// }
 
 // app/Models/Post.php
 
